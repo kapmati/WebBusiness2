@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="student.agh.edu.pl">
+  <component name="PublishConfigData" autoUpload="Always" serverName="student.agh.edu.pl">
     <serverData>
       <paths name="student.agh.edu.pl">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/eaiibgrp/kapmat/public_html" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html/phpStorm" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
