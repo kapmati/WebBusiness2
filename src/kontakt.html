@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Magiczny Kraków</title>
+    <link href="css/bajery.css" rel="stylesheet">
+    <link href="css/tabela.css" rel="stylesheet">
+    <script src="javascript/contacts.js"></script>
+</head>
+
+<body>
+<center><h1>Magiczny Kraków</h1></center>
+
+<center><img id="rynekPanorama" src="img/rynek_panorama.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></center>
+
+<center>
+    <ol id="menu">
+        <li>
+            <a href="index.html"><b>Strona g³ówna</b></a>
+        </li>
+        <li><a href="#2"><b>Zabytki</b></a>
+            <ul>
+                <li><a href="#21">Smok wawelski</a></li>
+                <li><a href="#22">Wawel</a>
+                    <ol>
+                        <li><a href="#221">Historia</a></li>
+                        <li><a href="#222">Mapa budynków</a></li>
+                        <li><a href="#223">Cennik</a></li>
+                    </ol>
+                </li>
+                <li><a href="#23">Rynek g³ówny</a></li>
+                <li><a href="#24">Kazimierz</a></li>
+                <li><a href="#25">Ko?ció³ Mariacki</a></li>
+            </ul>
+        </li>
+        <li><a href="turystyka.html"><b>Turystyka</b></a>
+            <ul>
+                <li><a href="#31">Noclegi</a></li>
+                <li><a href="#32">Restauracje</a> </li>
+                <li><a href="#33">Punkty informacyjne</a></li>
+            </ul>
+        </li>
+        <li><a href="#4"><b>Galeria</b></a></li>
+        <li><a href="kontakt.html"><b>Kontakt</b></a></li>
+    </ol>
+</center>
+
+<table id="contactTable" align="center">
+    <tr class="header">
+        <td colspan="4" align="center"> Kontakt</td>
+    </tr>
+    <tr class="header">
+        <td>Imiê</td>
+        <td>Nazwisko</td>
+        <td>Numer telefonu</td>
+        <td>Email</td>
+    </tr>
+    <tr class="cell">
+        <td>Mateusz</td>
+        <td>Kaproñ</td>
+        <td>11 22 33</td>
+        <td>kapmat@student.agh.edu.pl</td>
+    </tr>
+    <tr class="cell">
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <div align="center" style="margin-top:10px;">
+        <button id="insertButton" onclick="createRowInTable()">Insert row</button>
+    </div>
+</table>
+<p id="forLoop"></p>
+</body>
+
+<script>
+    var i;
+    for (i = 0; i < 10; i++) {
+        document.getElementById("forLoop").innerHTML += i + "<br>";
+    }
+</script>
+
+</html>

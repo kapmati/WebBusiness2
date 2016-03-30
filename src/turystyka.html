@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Turystyka</title>
+    <link id="pagestyle" href="css/bajery.css" type="text/css" rel="stylesheet">
+    <script src="javascript/watch.js"></script>
+</head>
+
+<body onload="move(); startTime(); changeSize()" >
+
+<center><h1 id="mainTitle" onclick="zamienTekst()">Magiczny Kraków</h1></center>
+
+<center><img id="rynekPanorama" src="img/rynek_panorama.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></center>
+
+<center>
+    <ol id="menu">
+        <li><a href="index.html"><b>Strona g³ówna</b></a></li>
+        <li><a href="#2"><b>Zabytki</b></a>
+            <ul>
+                <li><a href="#21">Smok wawelski</a></li>
+                <li><a href="#22">Wawel</a>
+                    <ol>
+                        <li><a href="#221">Historia</a></li>
+                        <li><a href="#222">Mapa budynków</a></li>
+                        <li><a href="#223">Cennik</a></li>
+                    </ol>
+                </li>
+                <li><a href="#23">Rynek g³ówny</a></li>
+                <li><a href="#24">Kazimierz</a></li>
+                <li><a href="#25">Ko?ció³ Mariacki</a></li>
+            </ul>
+        </li>
+        <li><a href="turystyka.html"><b>Turystyka</b></a>
+            <ul>
+                <li><a href="#31">Noclegi</a></li>
+                <li><a href="#32">Restauracje</a> </li>
+                <li><a href="#33">Punkty informacyjne</a></li>
+            </ul>
+        </li>
+        <li><a href="#4"><b>Galeria</b></a></li>
+        <li><a href="kontakt.html"><b>Kontakt</b></a></li>
+    </ol>
+</center>
+
+<button onclick="changeStyle('css/bajery.css')">Standardowy css</button>
+<button onclick="changeStyle('css/secondCss.css')">Podmieniony css</button>
+
+    <div align="center" id="watch" style="padding:20px;font-size:36px;"></div>
+    <img id="smokSmall" src="img\smokSmall.jpg"/>
+</body>
+
+
+<script>
+    function changeStyle(sheet) {
+    document.getElementById('pagestyle').setAttribute('href', sheet);
+    }
+
+    var x = 0;
+    var kierunek = 0;
+    var width=200;
+    var height=200;
+
+    function changeSize() {
+        for (var i = 20; i<100; i++) {
+            document.getElementById("smokSmall").style.width=i+"px";
+            document.getElementById("smokSmall").style.height=i+"px";
+        }
+        setTimeout(changeSize,100);
+    }
+
+    function move() {
+        document.getElementById("smokSmall").style.marginLeft=x+"px";
+        if (kierunek == 0) {
+            x = x + 1;
+            if(x==750) {
+                document.getElementById("smokSmall").style.transform='scaleX(-1)';
+                kierunek = 1;
+            }
+        } else {
+            x = x - 1;
+            if(x==20) {
+                document.getElementById("smokSmall").style.transform='scaleX(1)';
+                kierunek = 0;
+            }
+        }
+        setTimeout(move,1);
+    }
+</script>
+
+</html>

@@ -1,0 +1,35 @@
+table {
+    margin-top:20px;
+    /* Brak odstępów między komórkami */
+    border-collapse: collapse;
+    width: 200px;
+    background-color: #FFF;
+    margin-bottom:50px;
+}
+
+td {
+    border: 2px solid #000;
+    padding: 5px;
+}
+
+.header {
+    font-weight: bold;
+    background-color: #C0C0C0;
+}
+
+.header:hover {
+    background-color: #C0C0C0;
+}
+
+.cell {
+    height: 50px;
+    padding: 10px;
+}
+
+.cell:hover {
+    background-color: yellow;
+}
+
+tr:hover {
+    background-color: yellow;
+}
