@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Magiczny Krak?w</title>
-    <link href="css/desktopDesign.css" rel="stylesheet">
+    <title>Magiczny Kraków</title>
+    <link href="css/bajery.css" rel="stylesheet">
 </head>
 
-
-<center><h1 id="mainTitle" onclick="zamienTekst()">Magiczny Krak?w</h1></center>
+<body>
+<center><h1 id="mainTitle" onclick="zamienTekst()">Magiczny Kraków</h1></center>
 
 <center><img id="rynekPanorama" src="img/desktop/rynek_panorama.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></center>
 
 <center>
     <ol id="menu">
-        <li><a href="index.html"><b>Strona g??wna</b></a></li>
+        <li><a href="index.html"><b>Strona g³ówna</b></a></li>
         <li><a href="#2"><b>Zabytki</b></a>
             <ul>
                 <li><a href="#21">Smok wawelski</a></li>
@@ -51,11 +51,32 @@
     <area shape="rect" coords="15,365,390,490" title="Kamie?">
 </map>
 
+<?php
+//    require ('./php/userInf.php');
+//?>
 
+
+<?php
+    include 'php/detectMobile.php';
+?>
+
+<?php
+if (is_mobile() === true) {
+    print ("Mobilki");
+    require ('./View/desktopView.php');
+}
+?>
 
 </body>
 
 <script>
+
+	 function changePanorama() {
+        	var image = document.getElementById('rynekPanorama');
+        	image.src = "img/mobile/rynek_panorama2.jpg";
+    	 }
+		
+
     function zamienTekst() {
         document.getElementById("mainTitle").style.marginLeft="200px";
     }
@@ -68,8 +89,6 @@
             image.src = "img/smok2.jpg";
         }
     }
-
-
 
 </script>
 
