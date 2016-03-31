@@ -1,5 +1,5 @@
 body {
-    background-color:#CCE5FF;
+    background-color: #84ff4d;
     margin-left:10%;
     margin-right:10%;
 }
@@ -11,13 +11,14 @@ body center h1 {
     font-size:40px;
     box-shadow:12px 8px 0 black;
     padding:5px;
-    left: 37%;
+    left: 20%;
 
 }
 
 /* MENU */
 #menu {
-    width:900px;
+    width:100%;
+    height: 80px;
     /* Usunięcie domyślnych cech */
     list-style-type:none;
     margin:0 auto;
@@ -48,16 +49,24 @@ body center h1 {
 }
 
 #menu > li > a {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
     /* Dopasowanie do przycisku */
     display:block;
     /* Usunięcie podkreślenia */
     text-decoration:none;
     /* Dodanie marginesów wewnętrznych */
+    height: 60px;
     padding:15px;
     background-image:linear-gradient(white, #C1C1D7, white);
     color:#305FE2;
     border:1px solid white;
     font-size:18px;
+}
+
+#menu > li:first-child > a {
+    line-height: 30px;
 }
 
 #menu > li:hover > a {
@@ -139,6 +148,10 @@ body center h1 {
 }
 
 #rynekPanorama {
+    /*position: absolute;*/
+    max-width: 100%;
+    top:10%;
+    right: 10%;
     border:3px solid #000;
     margin-bottom:20px;
     filter:blur(5px);

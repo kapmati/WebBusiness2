@@ -44,7 +44,7 @@
     <a href="https://pl.wikipedia.org/wiki/Smok_wawelski">(wiki)</a>
     - legendarny smok,
 </p>
-<center><img id="smokImg" onclick="changeDragon()" src="src/img/smok.jpg" alt="smok" height="500" width="400" align="middle" usemap="#smokDetails"></center>
+<center><img id="smokImg" onclick="changeDragon()" src="src/img/desktop/smok.jpg" alt="smok" height="500" width="400" align="middle" usemap="#smokDetails"></center>
 <map name="smokDetails">
     <area shape="rect" coords="150,100,260,360" title="Smok wawelski">
     <area shape="rect" coords="170,40,210,110" title="Ogie?">

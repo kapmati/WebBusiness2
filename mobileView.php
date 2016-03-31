@@ -8,11 +8,11 @@
 <body>
 <center><h1 id="mainTitle" onclick="zamienTekst()">Magiczny Kraków - MOBILE</h1></center>
 
-<center><img id="rynekPanorama" src="src/img/mobile/rynek_panorama2.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></center>
+<div style="text-align: center;"><img id="rynekPanorama" src="src/img/mobile/rynek_panorama2.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></div>
 
 <center>
     <ol id="menu">
-        <li><a href="mobileView.php"><b>Strona g³ówna</b></a></li>
+        <li><a href="index.php"><b>Strona g³ówna</b></a></li>
         <li><a href="#2"><b>Zabytki</b></a>
             <ul>
                 <li><a href="#21">Smok wawelski</a></li>
@@ -44,7 +44,7 @@
     <a href="https://pl.wikipedia.org/wiki/Smok_wawelski">(wiki)</a>
     - legendarny smok,
 </p>
-<center><img id="smokImg" onclick="changeDragon()" src="src/img/smok.jpg" alt="smok" height="500" width="400" align="middle" usemap="#smokDetails"></center>
+<center><img id="smokImg" onclick="changeDragon()" src="src/img/mobile/smok.jpg" alt="smok" height="500" width="400" align="middle" usemap="#smokDetails"></center>
 <map name="smokDetails">
     <area shape="rect" coords="150,100,260,360" title="Smok wawelski">
     <area shape="rect" coords="170,40,210,110" title="Ogie?">
@@ -67,13 +67,7 @@ require('src/php/userInf.php');
         echo "changePanorama()";
 
     ?>
-
-//    function changePanorama() {
-//        var image = document.getElementById('rynekPanorama');
-//        image.src = "../img/mobile/rynek_panorama2.jpg";
-//    }
-
-
+    
     function zamienTekst() {
         document.getElementById("mainTitle").style.marginLeft="200px";
     }
@@ -81,9 +75,9 @@ require('src/php/userInf.php');
     function changeDragon() {
         var image = document.getElementById('smokImg');
         if (image.src.match("smok2")) {
-            image.src = "../img/smok.jpg";
+            image.src = "src/img/mobile/smok.jpg";
         } else {
-            image.src = "../img/smok2.jpg";
+            image.src = "src/img/mobile/smok2.jpg";
         }
     }
 </script>
