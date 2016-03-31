@@ -2,13 +2,13 @@
 <html>
 <head>
     <title>Magiczny Kraków</title>
-    <link href="css/bajery.css" rel="stylesheet">
+    <link href="src/css/desktopDesign.css" rel="stylesheet">
 </head>
 
 <body>
 <center><h1 id="mainTitle" onclick="zamienTekst()">Magiczny Kraków</h1></center>
 
-<center><img id="rynekPanorama" src="img/desktop/rynek_panorama.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></center>
+<center><img id="rynekPanorama" src="src/img/desktop/rynek_panorama.jpg" alt="rynek_panorama" height="300" width="1000" align="middle" ></center>
 
 <center>
     <ol id="menu">
@@ -44,7 +44,7 @@
     <a href="https://pl.wikipedia.org/wiki/Smok_wawelski">(wiki)</a>
     - legendarny smok,
 </p>
-<center><img id="smokImg" onclick="changeDragon()" src="img/smok.jpg" alt="smok" height="500" width="400" align="middle" usemap="#smokDetails"></center>
+<center><img id="smokImg" onclick="changeDragon()" src="src/img/smok.jpg" alt="smok" height="500" width="400" align="middle" usemap="#smokDetails"></center>
 <map name="smokDetails">
     <area shape="rect" coords="150,100,260,360" title="Smok wawelski">
     <area shape="rect" coords="170,40,210,110" title="Ogie?">
@@ -63,7 +63,7 @@
 <?php
 if (is_mobile() === true) {
     print ("Mobilki");
-    require ('./View/desktopView.php');
+    require('./src/desktopView.php');
 }
 ?>
 

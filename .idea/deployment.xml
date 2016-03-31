@@ -2,10 +2,18 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="student.agh.edu.pl" filePermissions="493">
     <serverData>
+      <paths name="local">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="student.agh.edu.pl">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/phpStorm" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/public_html" local="$PROJECT_DIR$" web="/~kapmat/" />
+            <mapping local="" />
           </mappings>
         </serverdata>
       </paths>
