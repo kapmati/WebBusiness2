@@ -6,8 +6,10 @@
  */
 include 'src/php/detectMobile.php';
 
+//include 'connectDB.php';
+
 if (is_mobile() === false) {
-    require('mobileView.php');
+    require('desktopView.php');
 } else {
     require('mobileView.php');
 }
