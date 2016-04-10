@@ -40,11 +40,7 @@
         <li><a href="kontakt.html"><b>Kontakt</b></a></li>
     </ol>
 </center>
-<!--<p style="" id="smokText">-->
-<!--    <b>Smok wawelski </b>-->
-<!--    <a href="https://pl.wikipedia.org/wiki/Smok_wawelski">(wiki)</a>-->
-<!--    - legendarny smok,-->
-<!--</p>-->
+
 <p style="text-align: justify;"><strong>Produkty</strong></p>
 <hr>
 
@@ -75,7 +71,6 @@
 </div>
 <hr>
 
-<a href="" onClick="res(); return false;">Res</a>
 </body>
 
 <script>
