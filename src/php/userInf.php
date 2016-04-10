@@ -27,6 +27,7 @@ if(ereg("konqueror", $browser)) $browser = " konqueror";
 if(ereg("lynx", $browser)) $browser = " lynx";
 if(ereg("Firefox", $browser)) $browser = " Firefox";
 if(ereg("compatible", $browser)) $browser = " Nieznana";
+if(ereg("Chrome", $browser)) $browser = " Chrome";
 
 //SYSTEM
 
@@ -38,6 +39,7 @@ if(ereg("(Windows) ([NT]) ([4])", $system)) $system = " Windows NT";
 if(ereg("Windows NT 5.0", $system)) $system = " Windows 2000";
 if(ereg("Windows NT 5.1", $system)) $system = " Windows XP";
 if(ereg("Windows XP", $system)) $system = " Windows XP";
+if(ereg("Windows NT 10.0", $system)) $system = " Windows NT 10.0";
 if(ereg("X11", $system)) $system = " X11";
 if(ereg("Mac", $system)) $system = " Macintosh";
 if(ereg("os/2", $system)) $system = " OS/2";
